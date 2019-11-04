@@ -114,9 +114,9 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     <!--</div>-->
     <!-- -------------------------contact ------------------------ -->
     <section class="sec-padding pageCart">
-        <p class="SecHeadP"> السلة</p>
+        <p class="SecHeadP"> المفضلة</p>
         <div class="width-lay">
-            <form>
+          
 
                 <table id="example" class="display responsive nowrap" style="width:100%">
                     <thead>
@@ -124,8 +124,7 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
                             <th></th>
                             <th>المنتج</th>
                             <th>السعر</th>
-                            <th>الكمية</th>
-                            <th>المجموع</th>
+                            <th></th>
                             <th></th>
 
                         </tr>
@@ -137,244 +136,66 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
                             <td>6 ريال</td>
 
                             <td>
-                                <div class="plus-minus-product">
-                                    <div class="number">
-                                        <span class="plus">+</span>
-                                        <input class="plus-minus" type="text" value="0" />
-                                        <span class="minus">-</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <!--  <td><div class="item-circle">2</div></td>-->
-                            <td>12 ريال</td>
-                            <td>
                                 <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
                             </td>
+                            <td></td>
 
                         </tr>
                         <tr>
-                            <td><img src="img/molten.png"> </td>
-                            <td>مولتن كيك</td>
+                          <td><img src="img/wafl.png"> </td>
+                            <td>وافل شيكولاتة</td>
                             <td>6 ريال</td>
-                            <td>
-                                <div class="plus-minus-product">
-                                    <div class="number">
-                                        <span class="plus">+</span>
-                                        <input class="plus-minus" type="text" value="0" />
-                                        <span class="minus">-</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>12 ريال</td>
+
                             <td>
                                 <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
                             </td>
+                            <td></td>
 
                         </tr>
                         <tr>
-                            <td><img src="img/dontes.png"> </td>
-                            <td>توست ابيض</td>
+                             <td><img src="img/wafl.png"> </td>
+                            <td>وافل شيكولاتة</td>
                             <td>6 ريال</td>
-                            <td>
-                                <div class="plus-minus-product">
-                                    <div class="number">
-                                        <span class="plus">+</span>
-                                        <input class="plus-minus" type="text" value="0" />
-                                        <span class="minus">-</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>12 ريال</td>
+
                             <td>
                                 <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
                             </td>
+                            <td></td>
 
                         </tr>
                         <tr>
-                            <td><img src="img/icecream.png"> </td>
-                            <td>ترايقل فواكه</td>
+                          <td><img src="img/wafl.png"> </td>
+                            <td>وافل شيكولاتة</td>
                             <td>6 ريال</td>
-                            <td>
-                                <div class="plus-minus-product">
-                                    <div class="number">
-                                        <span class="plus">+</span>
-                                        <input class="plus-minus" type="text" value="0" />
-                                        <span class="minus">-</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>12 ريال</td>
+
                             <td>
                                 <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
                             </td>
+                            <td></td>
 
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="flex-input">
-                    <div class="form-group ">
-                        <input type="text" class="form-control" name="number" placeholder="كوبون الخصم">
-                    </div>
+                   <div class="round">
+                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
+                                </div>
                     <div class="round">
-                        <button type="submit" class="button button-hover button-hov1">تاكيد</button>
-                    </div>
+                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
+                                </div>
                 </div>
 
 
-            </form>
-            <div class="summri">
-                <p class="summriP">ملخص السلة</p>
-                <div class="row row-summri">
-                    <div class="col-6">المجموع</div>
-                    <div class="col-6">1000 ريال</div>
-                    <div class="col-6">المجموع الكلي</div>
-                    <div class="col-6">1050 ريال</div>
-                </div>
-
-                <div class="round" data-toggle="modal" data-target="#demo1">
-                    <button class="button button-hover button-hov1">تاكيد</button>
-                </div>
-            </div>
+          
         </div>
 
 
     </section>
 
 
-    <!-- modal -->
-    <!-- --------------- modals ------------------ -->
-    <!-- Modal -->
-    <div class="modal modal-cart fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog opacity-animate4">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close close-form" data-dismiss="modal" aria-hidden="true">×</button>
-
-                    <form method="post" class="form-product" action="cart2.html">
-                        <img class="img-modal" src="img/smile.png">
-                        <div class="count-sec3">
-
-                            <p class="modalPcount ">من فضلك حدد مكانك</p>
-                        </div>
-
-                        <div class="contain-country">
-                            <div class="form-group">
-                                <label> المنطقة </label>
-                                <select class="js-select2">
-                                    <option>المنطقة</option>
-                                    <option>شارع 11</option>
-                                    <option>شارع 15</option>
-                                    <option>شارع 12</option>
-                                </select>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label>المدينة </label>
-                                <select @change="onChange()" class="js-select2">
-                                    <option>المدينة</option>
-                                    <option>القصيم</option>
-                                    <option>جدة</option>
-                                    <option>الرياض</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                               <label>تحديد الموقع </label>
-                                <div id="find_btn">الموقع</div>
-                            </div>
-                        </div>
-
-
-
-                        <div id="map-g"></div>
-                        <div class="form-group div-total">
-                                <p>التكلفة : <span class="total">0</span> </p>
-                        </div>
-
-
-                        <button class="sub-modal" type="submit"><i class="fas fa-check"></i></button>
-                    </form>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- items  -->
-    <section class="sec-padding sec-item-cart">
-
-        <div class="slider-cat offer-prod">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
-                        <div class="flip">
-                            <div class="front">
-                                <img src="img/img2.png">
-                            </div>
-                            <div class="back back1  ">
-                                <p>20%</p>
-                                <p>عرض جديد</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <div class="round">
-                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
-                        <div class="flip">
-                            <div class="front">
-                                <img src="img/img2.png">
-                            </div>
-                            <div class="back back2">
-                                <p>20%</p>
-                                <p>عرض جديد</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <div class="round">
-                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
-                        <div class="flip">
-                            <div class="front">
-                                <img src="img/icecream.png">
-                            </div>
-                            <div class="back back3">
-                                <p>20%</p>
-                                <p>عرض جديد</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <div class="round">
-                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
-                        <div class="flip">
-                            <div class="front">
-                                <img src="img/dontes.png">
-                            </div>
-                            <div class="back back4">
-                                <p>20%</p>
-                                <p>عرض جديد</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <p>هذا النص هو مثال لنص</p>
-                                <div class="round">
-                                    <a class="button button-hover button-hov1" href="sub-category.html">عرض</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    
     <!-- ------------footer--------------- -->
     <section class="footer sec-padding">
         <img src="img/footer-fonka.png" class="img-fonka">
@@ -446,11 +267,11 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     <!-- special for this page -->
     <!-- datatable -->
     
-    <script>
+  <!--  <script>
   function onChange(value) {
     console.log(value);
 }
-    </script>
+    </script>-->
 
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
@@ -461,16 +282,7 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 
     </script>
     <!-- select2 -->
-    <script src="js/select2.full.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".js-select2").select2();
-
-        });
-
-    </script>
-
-
+   
     <!-- delete -->
 
     <script>
@@ -483,63 +295,8 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 
     </script>
 
-    <!-- plus & minus -->
-    <script>
-        $(document).ready(function() {
-            $('.minus').click(function() {
-                var $input = $(this).parent().find('input');
-                var count = parseInt($input.val()) - 1;
-                count = count < 0 ? 0 : count;
-                $input.val(count);
-                $input.change();
-                return false;
-
-            });
-            $('.plus').click(function() {
-                var $input = $(this).parent().find('input');
-                $input.val(parseInt($input.val()) + 1);
-                $input.change();
-                return false;
-
-            });
-
-        });
-
-    </script>
-    <!-- ------------- map ----------------- -->
-    <script>
-        var map;
-
-        function initMap() {
-            var mapCenter = new google.maps.LatLng(47.6145, -122.3418); //Google map Coordinates
-            map = new google.maps.Map($("#map-g")[0], {
-                center: mapCenter,
-                zoom: 12
-            });
-        }
-
-        $("#find_btn").click(function() {
-            if ("geolocation" in navigator) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    infoWindow = new google.maps.InfoWindow({
-                        map: map
-                    });
-                    var pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent("Found your location <br />Lat : " + position.coords.latitude + " </br>Lang :" + position.coords.longitude);
-                    map.panTo(pos);
-                });
-            } else {
-                console.log("Browser doesn't support geolocation!");
-            }
-        });
-
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiOgBoR0bz-6mj23O0Wmk1CScy41joFMY&callback=initMap" async defer></script>
+   
+    
     <!-- end special for this page -->
     <!-- end special for this page -->
     <script src="js/js.js"></script>

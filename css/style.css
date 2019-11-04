@@ -2262,6 +2262,67 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
     /* height: 100%; */
     padding: 19px;
 }
+
+.contain-country{
+    width: 90%;
+    margin: auto
+}
+.contain-country .form-group{
+    width: 100%
+}
+.modal-cart  span.select2.select2-container.select2-container--default.select2-container--focus {
+    width: 100% !important;
+    
+}
+.modal-cart span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus{
+    width: 100% !important;
+    
+}
+.modal-cart  span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open{
+    width: 100% !important;
+    
+}
+ .modal-cart span.select2.select2-container.select2-container--default.select2-container--below{
+    width: 100% !important;
+    
+}
+.modal-cart span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+#map-g{
+    height: 150px
+}
+.modal form label {
+    display: block;
+    text-align: right
+  
+}
+#find_btn{
+    width: 100%;
+    border: 2px solid #137450;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 20px
+}
+.modal-cart .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 2px solid #137450;
+    border-radius: 20px;
+    padding: 2px 0px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-cart .select2-container--default .select2-selection--single .select2-selection__rendered {
+   
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.div-total{
+    margin-top: 20px
+}
 /* --------------------------------------------------
  -------------- cart2.html -----------
 --------------------------------------------------*/
@@ -2307,6 +2368,98 @@ p.property-sp {
     width: 52%;
 }
 form .round button.button.button-hover:before
+/* --------------------------------------------------
+ -------------- product-detalis-----------
+--------------------------------------------------*/
+
+#sync1 .item {
+  background: #0c83e7;
+  padding: 80px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#sync2 .item {
+  background: #C9C9C9;
+  padding: 10px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+#sync2 .item h1 {
+  font-size: 18px;
+}
+#sync2 .current .item {
+  background: #0c83e7;
+}
+
+.owl-theme .owl-nav {
+  /*default owl-theme theme reset .disabled:hover links */
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  transition: all .3s ease;
+}
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+
+#sync1.owl-theme {
+  position: relative;
+}
+#sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+#sync1.owl-theme .owl-prev {
+  left: 10px;
+}
+#sync1.owl-theme .owl-next {
+  right: 10px;
+}
+
+/* --------------------------------------------------
+ -------------- sec-categories.html-----------
+--------------------------------------------------*/
+.sec-categories{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding-top: 50px
+    
+}
+.sec-categories .re{
+    z-index: 9;
+    position: relative
+}
+
+.sec-categories .abs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   height: 100%;
+    width: 100%;
+}
+.offer {
+    margin-top: 23px;
+}
+.sec3-dep {
+    background-image: url(../img/bac2.png);
+    background-size:contain;
+    background-position: right;
+}
 /* --------------------------------------------------
  -------------- responsive media query-----------
 --------------------------------------------------*/
@@ -2551,6 +2704,20 @@ screen and (height: 1366px) {}
     .content-property:last-child {
     margin-top: 30px;
 }
+    /************department.html************/
+    img.re {
+    width: 229px;
+}
+    
+.sec-categories .abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;}
+    
 }
 
 @media only screen and (max-width: 576px) {
