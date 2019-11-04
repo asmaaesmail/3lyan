@@ -19,12 +19,7 @@
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- special for this page -->
-    <!-- data table -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
-https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
-    <link rel="stylesheet" href="css/select2.min.css">
+    
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
@@ -113,109 +108,58 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     </main>
     <!--</div>-->
     <!-- -------------------------contact ------------------------ -->
-    <section class="sec-padding pageCart">
-        <p class="SecHeadP"> المفضلة</p>
-        <div class="width-lay">
-
-
-            <table id="example" class="display responsive nowrap" style="width:100%">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>المنتج</th>
-                        <th>السعر</th>
-                        <th></th>
-                        <th></th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="relative"><img src="img/wafl.png">
-                            <span class="top">مميز</span>
-                            <span class="bottom">-50%</span>
-                        </td>
-                        <td>وافل شيكولاتة</td>
-                        <td>6 ريال</td>
-
-                        <td>
-                            <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
-                        </td>
-                        <td class="add-cart">
-                            <div>اضافة للسلة</div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td class="relative"><img src="img/wafl.png">
-                            <span class="top">مميز</span>
-                            <span class="bottom">-50%</span>
-                        </td>
-                        <td>وافل شيكولاتة</td>
-                        <td>6 ريال</td>
-
-                        <td>
-                            <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
-                        </td>
-                        <td class="add-cart">
-                            <div>اضافة للسلة</div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td class="relative"><img src="img/wafl.png">
-                            <span class="top">مميز</span>
-                            <span class="bottom">-50%</span>
-                        </td>
-                        <td>وافل شيكولاتة</td>
-                        <td>6 ريال</td>
-
-                        <td>
-                            <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
-                        </td>
-                        <td class="add-cart">
-                            <div>اضافة للسلة</div>
-                        </td>
-
-                    </tr>
-                    <tr>
-                       <td class="relative"><img src="img/wafl.png">
-                            <span class="top">مميز</span>
-                            <span class="bottom">-50%</span>
-                        </td>
-                        <td>وافل شيكولاتة</td>
-                        <td>6 ريال</td>
-
-                        <td>
-                            <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
-                        </td>
-                        <td class="add-cart">
-                            <div>اضافة للسلة</div>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="flex-input no-border">
-                <div class="round">
-                    <a class="button button-hover button-hov1" href="sub-category.html">حذف الكل</a>
+   <section class="sec-padding pageCart page-order">
+        <p class="SecHeadP">الطلبات</p>
+     
+             <div class="tabs-sec3 ">
+            <ul class="nav nav-pills mb-3 order-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">جديدة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">سارية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">منتهية</a>
+                </li>
+                
+            </ul>
+              <div class="width-lay">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                 <div class="row">
+                     <div class="col-lg-8 col-12">
+                         <a href="request-detalies.html">
+                             <div class="flex-order">
+                                 <img src="img/shopping-bag.png">
+                                 <div>
+                                     <p><span>رقم الطلب</span> <span>14215</span></p>
+                                       <p><span>عدد المنتجات</span> <span>15</span></p>
+                                       <p><span>عنوان التوصيل</span> <span>السعودية - القصيم </span></p>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="col-lg-4 col-12">
+                         <p>اجمالي المبلغ</p>
+                         <p>120ريال</p>
+                         <div>الغاء المبلغ</div>
+                     </div>
+                 </div>
                 </div>
-                <div class="round">
-                    <a class="button button-hover button-hov1" href="cart.html">اضافة الكل الي السلة </a>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    
+                    
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  
+                    
                 </div>
             </div>
-
-
-
         </div>
-
-
+       </div>
     </section>
-
-
-
-
+   
     <!-- ------------footer--------------- -->
     <section class="footer sec-padding">
         <img src="img/footer-fonka.png" class="img-fonka">
@@ -269,13 +213,13 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 
     <!-- -------loader----- -->
 
-    <div class="loaader">
-        <div id="loadIcon">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+  <div class="loaader">
+    <div id="loadIcon">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     </div>
     <!-- scripts -->
     <script src="js/demo.js"></script>
@@ -285,38 +229,7 @@ https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
-    <!-- datatable -->
-
-    <!--  <script>
-  function onChange(value) {
-    console.log(value);
-}
-    </script>-->
-
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
-
-    </script>
-    <!-- select2 -->
-
-    <!-- delete -->
-
-    <script>
-        $(".delet").click(function(event) {
-
-            $(this).parent().parent().fadeOut(700);
-            $(this).parent().parent().remove(700);
-
-        });
-
-    </script>
-
-
-
+   
     <!-- end special for this page -->
     <!-- end special for this page -->
     <script src="js/js.js"></script>
