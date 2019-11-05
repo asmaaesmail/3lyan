@@ -208,6 +208,10 @@ p {
     font-size: 16px
 }
 
+.bolck {
+    display: block
+}
+
 /************button**************/
 /* GENERAL STYLES */
 
@@ -808,7 +812,8 @@ p.SecHeadP::after {
     background-color: #fafafa;
     padding: 15px 35px;
     border-radius: 20px;
-    position: relative
+    position: relative;
+    overflow: hidden
 }
 
 .img-cat-slider img {
@@ -816,7 +821,13 @@ p.SecHeadP::after {
     height: 150px;
     object-fit: contain;
 }
-
+.img-cat-slider img{
+    transition: all .4s ease-in-out
+}
+.img-cat-slider:hover img{
+    transform: scale(1.5);
+    
+}
 flex-star {
     display: flex;
     align-items: center;
@@ -835,7 +846,9 @@ p.pDepartment {
     margin: auto;
     color: #747373;
     font-size: 16px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden
 }
 
 .flex-star i {
@@ -1429,6 +1442,9 @@ img.img-slide-sec4 {
     border: 3px solid rgb(19, 116, 80);
     color: #137450;
 }
+#owl-demo .flex-p-s4{
+    flex-direction: column
+}
 
 /* ---------------------------------------------------
 ---------------- sec5 ------------------
@@ -1453,6 +1469,13 @@ p-aboutus {}
 .sec5 .round .button.button-hover:before {
     background: #137450;
 }
+.sec4 .round .button.button-hover {
+    border: 2px solid #137450;
+}
+
+.sec4 .round .button.button-hover:before {
+    background: #137450;
+}
 
 .round.relative {
     position: relative;
@@ -1464,8 +1487,16 @@ p-aboutus {}
     font-weight: bold;
     font-size: 16px;
 }
+.sec4 .round a {
+    color: #137450;
+    font-weight: bold;
+    font-size: 16px;
+}
 
 .sec5 .round .button.button-hover:hover {
+    color: #fff;
+}
+.sec4 .round .button.button-hover:hover {
     color: #fff;
 }
 
@@ -2044,7 +2075,9 @@ form label {
     background-image: url(../img/layer-profile.png);
     background-position: top;
     background-size: 105%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9
 }
 
 .width-lay .round {
@@ -2120,16 +2153,15 @@ p.email-profile {
 /* --------------------------------------------------
  -------------- login-logout.html-----------
 --------------------------------------------------*/
-.img-login {
+.img-login img {
     width: 145px;
     height: 145px;
     border-radius: 50%;
-    margin: 20px auto 40px auto;
+    margin: 20px auto 6px auto;
 }
 
 .img-login img {
-    width: 100%;
-    height: 100%;
+    /**/
     border-radius: 50%
 }
 
@@ -2531,6 +2563,212 @@ form .round button.button.button-hover:before
     right: 10px;
 }
 
+#sync1 .owl-next,
+#sync1 .owl-prev {
+    display: none
+}
+
+#sync2 .owl-next,
+#sync2 .owl-prev {
+    display: none
+}
+
+
+div#sync1 {
+    height: 320px;
+}
+
+div#sync1 div {
+    height: 100%
+}
+
+div#sync1 div.item {
+
+    overflow: hidden;
+}
+
+#sync1 .item img {
+    transition: all .4s ease-in-out
+}
+
+#sync1 .item:hover img {
+    transform: scale(1.6)
+}
+
+div#sync1 img {
+    height: 100%
+}
+
+div#sync2 {
+    height: 60px;
+}
+
+div#sync2 div {
+    height: 95%
+}
+
+div#sync2 img {
+    height: 100%;
+    object-fit: contain
+}
+
+#sync2 .current .item {
+    background: #b9dbc6
+}
+
+#sync2 .item {
+    background: #ffffff;
+    border: 2px solid #036635;
+    overflow: hidden;
+    transition: all .4s ease-in-out
+}
+
+#sync2 .item img {
+    transition: all .4s ease-in-out
+}
+
+#sync2 .item:hover img {
+    transform: scale(1.6)
+}
+
+.widthlay-nobac {
+    background-image: unset
+}
+
+.produc-top {
+    margin-top: 45px
+}
+
+.align-resp {
+    text-align: right;
+    padding-right: 20px
+}
+
+.product-layName {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.widthlay-nobac .flex-star {
+    margin-bottom: 17px;
+    position: relative
+}
+
+.widthlay-nobac .flex-star::after {
+    position: absolute;
+    bottom: -3px;
+    content: "";
+    height: 2px;
+    width: 90%;
+    margin: auto;
+    background-color: #cecece;
+    left: 0;
+    right: 0
+}
+
+.widthlay-nobac .number {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px
+}
+
+.widthlay-nobac .minus,
+.widthlay-nobac .plus,
+.widthlay-nobac .plus-minus {
+    border: 0
+}
+
+.widthlay-nobac .plus-minus-product {
+    display: flex;
+    align-items: center
+}
+
+.round {
+    cursor: pointer
+}
+
+.p-detalies {
+    width: 90%;
+    margin-top: 22px;
+}
+
+.logo-about-us {
+
+    margin: 25px auto 0 auto;
+    animation: main 3s;
+    transform-origin: 100% 50%;
+    animation-delay: 1s;
+
+    object-fit: contain;
+}
+
+.marg-botLogo {
+    margin-bottom: 40px
+}
+
+@keyframes main {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.width-lay.widthlay-nobac.produc-top {
+    position: relative
+}
+
+section.sec2.sec-padding.product-sec nav {
+    position: absolute;
+    top: -52px
+}
+
+
+section.sec2.sec-padding.product-sec .nav-tabs .nav-link {
+    border: 1px solid transparent;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: #000;
+    background-color: #e4e4e4;
+    border-radius: 20px 20px 0 0;
+    width: 131px;
+}
+
+section.sec2.sec-padding.product-sec .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #137450 !important;
+    border-color: inherit;
+
+    color: #fff !important;
+    ;
+}
+
+.owl-item .flex-star::after {
+    content: none
+}
+
+.product-sec .owl-item span {
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+p.product-layName.name-right {
+    text-align: right;
+}
+
+.marg-no {
+    margin-top: 0
+}
+
 /* --------------------------------------------------
  -------------- sec-categories.html-----------
 --------------------------------------------------*/
@@ -2609,6 +2847,10 @@ span.bottom {
     padding: 0 10px 0 0
 }
 
+.owl-nav.disabled {
+    display: none !important;
+}
+
 /* --------------------------------------------------
  -------------- orders-----------
 --------------------------------------------------*/
@@ -2626,34 +2868,257 @@ span.bottom {
     background-position: bottom left;
     background-size: auto;
 }
+
 .flex-order {
     display: flex;
     align-items: center;
     padding: 0 16px;
 }
-.flex-order > img{
-   margin-left: 20px
+
+.flex-order > img {
+    margin-left: 20px
 }
+
 .flex-order p {
     margin-bottom: 8px;
 }
+
 .flex-order p:nth-child(1) {
-   color: #000;
+    color: #000;
     font-size: 17px
 }
+
 .flex-order p:nth-child(2) {
-   color: #2e9652;
+    color: #2e9652;
     font-size: 18px;
     font-weight: bold
 }
+
 .flex-order p:nth-child(3) {
-  
+
     font-size: 14px;
-   color: #8a8585
+    color: #8a8585
 }
-.page-order .width-lay{
-    background-color: rgba(255, 255, 255, 0.7)
+
+.page-order .width-lay {
+    background-color: rgba(255, 255, 255, 0.8)
 }
+
+section.sec-padding.pageCart.page-order {
+    background-color: #fbfbfb
+}
+.boldtotal{
+    font-size: 18px;
+    font-weight: bold
+}
+.amount{
+    color: #2e9652;
+    
+    font-weight: bold
+}
+.cancel-order{ width: 120px;
+    margin: auto;
+    background-color: #bc2020;
+    padding: 8px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.row.row-order {
+    padding: 20px 0;
+    border-bottom: 1px solid #b3b1b1;
+    width: 100%;
+    margin: auto
+}
+.row.row-order:last-child{
+    border: 0
+}
+/* --------------------------------------------------
+ -------------- branches.html-----------
+--------------------------------------------------*/
+
+.map-branches {
+    width: 100%px;
+    height: 220px;
+    background-color: darkgoldenrod
+}
+
+.content-map {
+    background-color: rgba(228, 228, 228, 0.6);
+    width: 70%;
+    padding: 30px;
+    margin: 15px auto;
+    transition: all .4s ease-in-out
+}
+
+.content-map:hover {
+    box-shadow: 0px 0px 5px #949494;
+}
+
+.logo-map {
+    width: 60%;
+    object-fit: contain;
+    margin-bottom: 20px
+}
+
+a.bolck span {
+    color: #000;
+    font-size: 18px;
+}
+
+.flex-map {
+    display: flex;
+
+}
+
+.aligne-self {
+    align-self: flex-end
+}
+
+.marg40bot {
+    margin-bottom: 40px;
+}
+
+.branc-sec {
+    position: relative;
+    z-index: 9;
+    background-image: url(../img/contact-layer.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+}
+
+/* --------------------------------------------------
+ -------------- balence.html-----------
+--------------------------------------------------*/
+.div-balence {
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto 20px auto;
+    background-color: rgba(255, 255, 255, .77);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #949494;
+    transition: all .4s ease-in-out;
+    position: relative;
+    z-index: 9
+}
+
+.balence-sec .div-balence:nth-child(1) {
+    margin-bottom: 50px
+}
+
+.div-balence:first-child {
+    margin-bottom: 20px
+}
+
+.div-balence:hover {
+    box-shadow: 0px 0px 5px #949494;
+}
+
+p.balence-p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #137450;
+    text-align: right;
+}
+
+.no-marg {
+    margin-bottom: 0
+}
+
+.div-pBalence p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.div-pBalence p:nth-child(2) {
+    font-size: 18px;
+    color: #989898
+}
+
+.balence-sec {
+    background-color: #f7f7f7
+}
+
+section.sec2.sec-padding.product-sec.balence-sec {
+    overflow: hidden;
+}
+.width-resp{
+    width: 70%
+}
+.bottom {
+    animation-delay: .4s
+}
+.div-balence.div-notfic .row {
+    display: flex;
+    align-items: center;
+}
+
+/* --------------------------------------------------
+ -------------- notfication .html-----------
+--------------------------------------------------*/
+
+.div-balence.div-notfic {
+    border-radius: 2px;
+}
+
+.new-notf {
+    background-color: rgba(185, 219, 198, 0.7)
+}
+
+.address-p {
+    font-size: 14px;
+    color: #8a8585;
+}
+.span-left{
+    margin-left: 20px
+}
+.delet-notfication{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    font-size: 25px;
+        color: #5a5a5a;
+   
+    font-weight: bold;
+}
+
+/* --------------------------------------------------
+ -------------- productshtml----------
+--------------------------------------------------*/
+.sec-products{
+    position: relative;
+    z-index: 9
+}
+.pagination1 {
+    margin: 20px auto;
+    text-align: center;
+}
+.pagination {
+   display: flex;
+    align-items: center;
+    justify-content: center
+}
+.pagination li.page-item {
+    margin: 0 10px;
+}
+.page-link {
+    position: relative;
+  
+    color: #319559;
+    background-color: #fff;
+    border: 2px solid #319559;
+    border-radius: 50% !important;
+    height: 35px;
+    width: 35px
+}
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: unset;}
 /* --------------------------------------------------
  -------------- responsive media query-----------
 --------------------------------------------------*/
@@ -2887,7 +3352,7 @@ screen and (height: 1366px) {}
     /************login-logout.html************/
     .img-login {
         width: 145px;
-        height: 145px;
+        /*  height: 145px;*/
         border-radius: 50%
     }
 
@@ -2910,6 +3375,32 @@ screen and (height: 1366px) {}
         margin-top: 30px;
     }
 
+    /* --------------------------------------------------
+ -------------- product-detalis-----------
+--------------------------------------------------*/
+    .align-resp {
+        text-align: center;
+        padding-right: 0
+    }
+
+    .product-layName {
+        margin-top: 25px
+    }
+
+    .owl-nav.disabled {
+        display: none !important;
+    }
+
+    .widthlay-nobac .plus-minus-product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .widthlay-nobac .plus-minus-product .number {
+        margin-bottom: 20px
+    }
+
     /************department.html************/
     img.re {
         width: 229px;
@@ -2925,6 +3416,56 @@ screen and (height: 1366px) {}
         object-fit: cover;
     }
 
+    /***********orders.html**********/
+    
+    .flex-order {
+    flex-direction: column;
+}
+    .flex-order img {
+    margin-bottom: 17px;
+}
+    .flex-order p:nth-child(3) {
+    font-size: 14px;
+    color: #504f4f;
+}
+    /***********branches.html**********/
+    .flex-map {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aligne-self {
+        align-self: auto;
+    }
+
+    .content-map {
+        width: 85%;
+        padding: 20px
+    }
+
+    .flex-map p.product-layName.name-right {
+        text-align: center;
+    }
+
+    form label {
+        font-size: 15px;
+    }
+     /***********notfications.html**********/
+    .width-resp{
+    width: 100%
+}
+    .div-balence {
+    
+        width: 90%;
+    }
+    
+    p.balence-p.align-resp {
+    text-align: center;
+    margin-top: 15px;
+}
+    .delet-notfication {
+        top: -22px;}
 }
 
 @media only screen and (max-width: 576px) {
@@ -2998,4 +3539,7 @@ screen and (height: 1366px) {}
         font-size: 20px;
         font-weight: bold;
     }
+}
+.hamburger::after{
+    display: none
 }
