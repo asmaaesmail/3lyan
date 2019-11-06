@@ -75,7 +75,7 @@
                                         <a class="global-menu__item global-menu__item--demo-1" href="balence.html">الرصيد</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="profile.html">الحساب الشخصي</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="branchs.html">الفروع</a>
-                                        <a class="global-menu__item global-menu__item--demo-1 activeNave" href="notfications.html">الاشعارات</a>
+                                        <a class="global-menu__item global-menu__item--demo-1" href="notfications.html">الاشعارات</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="cart.html">سلة الشراء</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="login-logout.html">تسجيل خروج</a>
                                     </div>
@@ -108,64 +108,36 @@
     </main>
     <!--</div>-->
     <!-- -------------------------contact ------------------------ -->
-    <section class="sec2 sec-padding product-sec balence-sec">
-        <p class="SecHeadP wow zoomIn marg40bot">الاشعارات</p>
-        <div class="div-balence div-notfic new-notf">
+
+    <section class="sec-padding login-page ">
+        <p class="SecHeadP wow zoomIn">ادخل بريدك الاكتروني او رقم التليفون </p>
+        <div class="container ">
+            <div class="login-logout rset-page padding-forget">
+                <div class="row">
+
+                    <div class="col-sm-12  ">
+                        <div class="profile sec-profile profile-edit ">
+                            <form class="form" action="code.html">
 
 
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
-                </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-                     <div class="delet delet-notfication">x</div>
-                </div>
-            </div>
+                                <div class="form-group">
+                                    <label>البريد الاكتروني </label>
+                                    <input type="text" class="form-control" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <div class="round">
+                                        <button type="submit" class="button button-hover button-hov1">ارسال</button>
+                                    </div>
 
 
-        </div>
-
-        <div class="div-balence div-notfic new-notf">
-
-
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
-                </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-
-                    <div class="delet delet-notfication">x</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-        </div>
-
-        <div class="div-balence div-notfic">
-
-
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
-                </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-                     <div class="delet delet-notfication">x</div>
-                </div>
-            </div>
-
-
         </div>
     </section>
-
     <!-- ------------footer--------------- -->
     <section class="footer sec-padding">
         <img src="img/footer-fonka.png" class="img-fonka">
@@ -235,16 +207,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
-    <!-- delete -->
-    <script>
-        $(".delet").click(function(event) {
-
-            $(this).parent().parent().parent().fadeOut(700);
-            $(this).parent().parent().parent().remove(700);
-
-        });
-
-    </script>
 
     <!-- end special for this page -->
     <!-- end special for this page -->

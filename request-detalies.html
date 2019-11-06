@@ -19,7 +19,11 @@
     <!-- animate -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- special for this page -->
+    <!-- data table -->
 
+     <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
 
     <!-- end special -->
     <link rel="stylesheet" href="css/style.css">
@@ -75,8 +79,8 @@
                                         <a class="global-menu__item global-menu__item--demo-1" href="balence.html">الرصيد</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="profile.html">الحساب الشخصي</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="branchs.html">الفروع</a>
-                                        <a class="global-menu__item global-menu__item--demo-1 activeNave" href="notfications.html">الاشعارات</a>
-                                        <a class="global-menu__item global-menu__item--demo-1" href="cart.html">سلة الشراء</a>
+                                        <a class="global-menu__item global-menu__item--demo-1" href="notfications.html">الاشعارات</a>
+                                        <a class="global-menu__item global-menu__item--demo-1 activeNave" href="cart.html">سلة الشراء</a>
                                         <a class="global-menu__item global-menu__item--demo-1" href="login-logout.html">تسجيل خروج</a>
                                     </div>
                                 </div>
@@ -108,63 +112,137 @@
     </main>
     <!--</div>-->
     <!-- -------------------------contact ------------------------ -->
-    <section class="sec2 sec-padding product-sec balence-sec">
-        <p class="SecHeadP wow zoomIn marg40bot">الاشعارات</p>
-        <div class="div-balence div-notfic new-notf">
+    <section class="sec-padding pageCart">
+        <p class="SecHeadP">تفاصيل الطلب</p>
+        <div class="width-lay">
+            <form>
+
+                <table id="example" class="display responsive nowrap" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>المنتج</th>
+                            <th>السعر</th>
+                            <th>الكمية</th>
+                            <th>المجموع</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/wafl.png"> </td>
+                            <td>وافل شيكولاتة</td>
+                            <td>6 ريال</td>
+
+                            <td>
+                                <div class="plus-minus-product">
+                                    <div class="number">
+                                        <span class="plus">+</span>
+                                        <input class="plus-minus" type="text" value="0" />
+                                        <span class="minus">-</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <!--  <td><div class="item-circle">2</div></td>-->
+                            <td>12 ريال</td>
+                            <td>
+                                <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><img src="img/molten.png"> </td>
+                            <td>مولتن كيك</td>
+                            <td>6 ريال</td>
+                            <td>
+                                <div class="plus-minus-product">
+                                    <div class="number">
+                                        <span class="plus">+</span>
+                                        <input class="plus-minus" type="text" value="0" />
+                                        <span class="minus">-</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>12 ريال</td>
+                            <td>
+                                <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><img src="img/dontes.png"> </td>
+                            <td>توست ابيض</td>
+                            <td>6 ريال</td>
+                            <td>
+                                <div class="plus-minus-product">
+                                    <div class="number">
+                                        <span class="plus">+</span>
+                                        <input class="plus-minus" type="text" value="0" />
+                                        <span class="minus">-</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>12 ريال</td>
+                            <td>
+                                <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><img src="img/icecream.png"> </td>
+                            <td>ترايقل فواكه</td>
+                            <td>6 ريال</td>
+                            <td>
+                                <div class="plus-minus-product">
+                                    <div class="number">
+                                        <span class="plus">+</span>
+                                        <input class="plus-minus" type="text" value="0" />
+                                        <span class="minus">-</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>12 ريال</td>
+                            <td>
+                                <div class="item-circle delet"><i class="far fa-trash-alt"></i></div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="flex-input">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" name="number" placeholder="كوبون الخصم">
+                    </div>
+                    <div class="round">
+                        <button type="submit" class="button button-hover button-hov1">تم</button>
+                    </div>
+                </div>
 
 
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
+            </form>
+            <div class="summri">
+                <p class="summriP">ملخص الطلب</p>
+                <div class="row row-summri">
+                    <div class="col-6">المجموع</div>
+                    <div class="col-6">1000 ريال</div>
+                    <div class="col-6">المجموع الكلي</div>
+                    <div class="col-6">1050 ريال</div>
                 </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-                     <div class="delet delet-notfication">x</div>
-                </div>
+
+
             </div>
 
 
         </div>
 
-        <div class="div-balence div-notfic new-notf">
 
-
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
-                </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-
-                    <div class="delet delet-notfication">x</div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="div-balence div-notfic">
-
-
-            <div class="row">
-                <div class="col-12 col-md-2">
-                    <img src="img/notification.png">
-                </div>
-                <div class="col-12 col-md-10 align-resp">
-                    <p class="balence-p align-resp">رسالة جديدة</p>
-                    <p class="width-resp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-                    <p class="address-p"><span>الثلاثاء 17 سبتمبر 2019</span> <span class="span-left">30:00 pm</span></p>
-                     <div class="delet delet-notfication">x</div>
-                </div>
-            </div>
-
-
-        </div>
     </section>
+    <!-- modal -->
+    <!-- --------------- modals ------------------ -->
+    <!-- Modal -->
+
 
     <!-- ------------footer--------------- -->
     <section class="footer sec-padding">
@@ -235,17 +313,62 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!-- special for this page -->
-    <!-- delete -->
-    <script>
-        $(".delet").click(function(event) {
+    <!-- datatable -->
 
-            $(this).parent().parent().parent().fadeOut(700);
-            $(this).parent().parent().parent().remove(700);
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+
+    </script>
+    <!-- select2 -->
+    <script src="js/select2.full.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".js-select2").select2();
 
         });
 
     </script>
 
+
+    <!-- delete -->
+
+    <script>
+        $(".delet").click(function(event) {
+
+            $(this).parent().parent().fadeOut(700);
+            $(this).parent().parent().remove(700);
+
+        });
+
+    </script>
+
+    <!-- plus & minus -->
+    <script>
+        $(document).ready(function() {
+            $('.minus').click(function() {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 0 ? 0 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+
+            });
+            $('.plus').click(function() {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+
+            });
+
+        });
+
+    </script>
     <!-- end special for this page -->
     <!-- end special for this page -->
     <script src="js/js.js"></script>

@@ -16,8 +16,22 @@ $(document).ready(function(){
 /******** toggle navbar **************/
 
     
-   
-    
+	var scroltopbtn = $("#top");
+	$(window).scroll(function () {
+
+        if ($(this).scrollTop() > 320) {
+			
+            $("header.codrops-header").addClass("fixed-nav");
+            $(".fixed-nav").css("animation-name","flipInX");
+            console.log("aa")
+           
+		} else if($(this).scrollTop() < 320) {
+		
+		 $("header.codrops-header").removeClass("fixed-nav");
+         // $(".fixed-nav").css("animation-name","flipInX");
+		}
+	});
+     
     /*------------wow init ----------------*/
     
      wow = new WOW(
@@ -25,7 +39,7 @@ $(document).ready(function(){
                       boxClass:     'wow',      
                       animateClass: 'animated', 
                       offset:       0,          
-                      mobile:       false,      
+                     /* mobile:       false, */     
                       live:         true        
                     }
                     )
