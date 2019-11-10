@@ -319,7 +319,7 @@
         <div class="slider-cat offer-prod">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
+                    <div class="col-12 col-sm-6 col-md-4  col-lg-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
                         <div class="flip">
                             <div class="front">
                                 <img src="img/img2.png">
@@ -334,7 +334,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
+                    <div class="col-12 col-sm-6 col-md-4  col-lg-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
                         <div class="flip">
                             <div class="front">
                                 <img src="img/img2.png">
@@ -349,7 +349,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
+                    <div class="col-12 col-sm-6 col-md-4  col-lg-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
                         <div class="flip">
                             <div class="front">
                                 <img src="img/icecream.png">
@@ -364,7 +364,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
+                    <div class="col-12 col-sm-6 col-md-4  col-lg-3 offer wow rotateIn" style="visibility: visible; animation-name: rotateIn;">
                         <div class="flip">
                             <div class="front">
                                 <img src="img/dontes.png">
@@ -483,14 +483,12 @@
     <!-- delete -->
 
     <script>
+        $(document).ready(function() {
         $(".delet").click(function(event) {
-
-            /* $(this).parent().parent().fadeOut(700);
-             $(this).parent().parent().remove(700);*/
             $(this).parents("tr").fadeOut(700);
             $(this).parent("tr").remove(700);
 
-        });
+        }); });
 
     </script>
 
